@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+           
+           
+            height: 100vh;
+        }
+        .header {
+            width: 100%;
+            background-color: red;
+            height: 30%;
+            text-align: left;
+        }
+        .nav {
+            background-color: lightcoral;
+           width: 30%;
+            text-align: center;
+        }
+        .section {
+            background-color: bisque;
+            width: 40%;
+            text-align: center;
+          
+        }
+        .aside {
+            background-color: blue;
+            width: 30%;
+            text-align: center;
+        }
+        .footer {
+            background-color: yellow;
+            height: 30%;
+            text-align: center;
+        }
+        .section-header {
+           background-color: orange;
+           height: 20%;
+        }
+        .section-arcticle {
+            background-color: aqua;
+            height: 40%;
+        }
+        .section-footer {
+            background-color: brown;
+            height: 40%;
+        }
+        .content {
+            display: flex;
+            flex-direction: row;
+            height: 40%;
+            position: relative;
+        }
+        .header-content {
+            text-align: center;
+            padding-left: 200px;
+            width: fit-content;
+            
+           
+        }
+        @media only screen and (max-width: 1000px){
+            .content {
+                display: flex;
+                flex-direction: column;
+            }
+            .nav {
+                width: auto;
+                height: 20%;
+            }
+            .section-header {
+            
+            }
+            .section-arcticle {
+               
+            }
+            .section-footer {
+                
+            }
+            .section {
+                width: auto;
+                height: 60%;
+            }
+            .aside {
+                width: auto;
+                height: 20%;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="main">
+        <div class="header">Header
+            <div class="header-content">
+                <a href="">Trang chủ</a>
+                <a href="">About</a>
+                <a href="">Contact </a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="nav">Nav</div>
+            <div class="section">
+                <div class="section-header">section-header</div>
+                <div class="section-arcticle">section-arcticle</div>
+                <div class="section-footer">section-footer</div>
+            </div>
+            <div class="aside">aside</div>
+        </div>
+       
+        <div class="footer">Footer <br>
+            Copy right by : Phuong
+        </div>
+    </div>
+  
+</body>
+</html>
